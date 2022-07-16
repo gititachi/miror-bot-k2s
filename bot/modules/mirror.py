@@ -439,7 +439,7 @@ def _mirror(bot, message, isZip=False, extract=False, isQbit=False, isLeech=Fals
         nextmsg = sendMessage(msg, bot, nextmsg)
         nextmsg.from_user.id = message.from_user.id
         multi -= 1
-        sleep(4)
+        sleep(90)
         Thread(target=_mirror, args=(bot, nextmsg, isZip, extract, isQbit, isLeech, pswd, multi)).start()
 
 
