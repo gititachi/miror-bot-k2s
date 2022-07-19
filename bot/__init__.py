@@ -445,5 +445,6 @@ except:
 updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 bot = updater.bot
 dispatcher = updater.dispatcher
+bot.send_message(chat_id = list(AUTHORIZED_CHATS)[0],text="⚡️Rebooted⚡️")
 job_queue = updater.job_queue
 botname = bot.username
